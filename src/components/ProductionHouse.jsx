@@ -43,7 +43,10 @@ function ProductionHouse() {
     <div className="flex gap-5 mt-5 p-2 px-16">
       {productionHouseList.map((item) => {
         return (
-          <div className="relative border-[2px] border-gray-600 rounded-lg hover:scale-110 transition-all duration-300 ease-in shadow-xl shadow-gray-800">
+          <div
+            key={item.id}
+            className="relative border-[2px] border-gray-600 rounded-lg hover:scale-110 transition-all duration-300 ease-in shadow-xl shadow-gray-800"
+          >
             <video
               src={item.video}
               autoPlay
